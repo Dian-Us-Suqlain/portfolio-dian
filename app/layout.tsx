@@ -3,6 +3,7 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -28,6 +29,7 @@ export default function RootLayout({
         <AnimatedBackground />
         <Navbar />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
